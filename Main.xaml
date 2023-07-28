@@ -1,0 +1,531 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="790,7319" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sahibinden Main Sequence" sap:VirtualizedContainerService.HintSize="800,7254" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:Int32" Name="TotalMarketValue" />
+      <Variable x:TypeArguments="x:Int32" Name="TotalAdvertisementCount" />
+      <Variable x:TypeArguments="x:Double" Name="avgMarketPrice" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: sahibinden.com - Türkiye'nin Online İlan ve Alışveriş Sitesi" sap:VirtualizedContainerService.HintSize="738,7143" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,6885" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="test" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Filtreleme İşlemleri" sap:VirtualizedContainerService.HintSize="642,4613" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Name="isUipathButtonExist" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="410,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <ui:UiElementExists DisplayName="Element Exists 'A  /kategori/otomobil'" Exists="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81fcc5ed-23b0-4d90-9f7d-5d9e2627905e" InformativeScreenshot="2e993dbe93244dcbfce8fcd18d757461" Selector="&lt;webctrl aaname='                             Otomobil' parentid='container' tag='A' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,429" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Otomobil Kategori Seçimi" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/" CvTextArgument="Otomobil" CvType="Text" DesignTimeRectangle="160, 560, 59, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Otomobil'" FullSelectorArgument="&lt;webctrl aaname='                             Otomobil' parentid='container' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                             Otomobil' parentid='container' tag='A' type='' class='' check:innerText='Otomobil' /&gt;" Guid="64914051-fac5-4819-b0ef-07b79b939875" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAATCAYAAAAnMdWSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVFhH7VTLDcIwDO1ObMIe3aILcGSAcq9YAXHtsSNUFUOY2o5JmhiSIMQvfVJVOY5f/GwnFRSMVXypWMX/Hi7Q1nvYdhdjx6DvD8VPJ9hu9lA5X9Mb39cgLn7sDlDVJxjJShHfHxWxAzTzmhtIxLvBWJ/AyzvPItUu0zQcoJ2McDMR+FlCjr/5blVH2MPPO9lzhPPs8W2LFL6B/rInaFBy50mgn4CAg6UwYefZ766RKO9wTJA5dNsml8rHDSE4DULkiaeRfyxeggPxauGwc5KMLu6unc2HUHJ8S+fVwrnXyD88YmfzMXA6ZC1P/ILcgzZSf9V5hPbaUyLLwCUxgsljd9RypNnxO+8UyJuWfPEII1Ze0KAYBJ4S9AUJS5xSnHTxiDhf09s8Fo/fjOfEF4RVfKlYxZcJgCtnHlrunAIrPgAAAABJRU5ErkJggg==" InformativeScreenshot="4296a8a5f55d79ae7173908faa0fbc44.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='sahibinden.com - Türkiye&amp;apos;nin Online İlan ve Alışveriş Sitesi' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_11" />
+                </If.Else>
+              </If>
+              <ui:UiElementExists DisplayName="Element Exists 'H2'" Exists="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a187e531-6ad0-449a-9320-ce2870b698c0" InformativeScreenshot="6578900ef980addc880fb15193f82f89" Selector="&lt;html app='chrome.exe' title='*sahibinden.com&amp;apos;da' /&gt;&lt;webctrl aaname='BMW' tag='H2' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,429" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Marka Seçimi" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/otomobil" CvTextArgument="BMW" CvType="Text" DesignTimeRectangle="123, 394, 32, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'BMW'" Guid="100bdc8d-31c6-4d3d-98b8-3295c730ee97" InformativeScreenshot="848554e98169f64d4ef81c8ba14873c5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2.El Arabalar ve Satılık Sıfır Km Otomobil Fiyatları sahibinden.com&amp;apos;da' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Bugatti (2)" CvType="Text" DesignTimeRectangle="124, 416, 44, 15" ElementType="Text" FriendlyName="'Bugatti'" FullSelectorArgument="&lt;webctrl aaname='Bugatti' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bugatti' tag='H2' type='' class='' check:innerText='Bugatti' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAATCAYAAADWOo4fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE2SURBVEhL7ZTLDYMwDIbZiU3Ygy1YgGMHgDtiBcSVIyMgxBAuzgvnQQNSAkXilyo1dkj8/TYk8HC9AHfrBbhbCmBqakjSD/nVUM0i+RdaoMo/kDWLWHPpAHkHE12nLfRiHVVzB5l5lyvm0C4ADC0BsOmt/TBCQTqYNR1bF4NIr+pL0uFy5EFWKInjma7YuQ6Ym30AO/n1cgWwGqL+swLJiB7qwBEAQk2d8wJo3ZLiHdHPkcJcDADDUa/DpwD0EdM+EuEBUNQl+2E2z2q/7bacdx4Thsi5j9+BVcxVNwDuzXJjP7tQuouF0yJ1QHaXBUDWKCt2BIAUwIsQSRQpEA+xO2bKcJkZsj3PO7Tl1ReKnKnHPADB5XI1goIBoFvWO/CzQ2EUsAPiRRVjckXxqHgjdJEeDgDwBZtaHGJxDTloAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_13" />
+                </If.Else>
+              </If>
+              <ui:UiElementExists DisplayName="Element Exists 'H2'" Exists="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ef366834-300e-450e-8e93-2ef04aeb95c9" InformativeScreenshot="894d4a2106b7b3003c789db31482bad9" Selector="&lt;html app='chrome.exe' title='*sahibinden.com&amp;apos;da' /&gt;&lt;webctrl aaname='3 Serisi' parentid='searchCategoryContainer' tag='H2' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,429" sap2010:WorkflowViewState.IdRef="If_3">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Model Seçimi" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw" CvTextArgument="Serisi" CvType="Text" DesignTimeRectangle="148, 392, 46, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'3 Serisi'" FullSelectorArgument="&lt;webctrl aaname='3 Serisi' parentid='searchCategoryContainer' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3 Serisi' parentid='searchCategoryContainer' tag='H2' type='' class='' check:innerText='3 Serisi' /&gt;" Guid="392ff71b-839a-4faf-9447-87650b8201b1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAATCAYAAADSz14iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE4SURBVEhL7ZTNDYMwDIXZqZt0D7ZggRwZAO6IFVCuHBkBIYZwSeIkzh+BVqpoxZNQFZLY/vxMC/gT3SBX0w1yNbkgYw/Fo8anhWbB9wnNXWvPlwPM+P4tydw9cFymNUG15atGXKIIyHaAFKOK3AnsJxZrNuHi+0qPVqZDEnTPhWWAp3GXxlmhKWt4dpP8NXtBPtV5ed9pUNYRKp1sxXVEptDYCLrJJLQpRsUOxtED4YwAbHu2lgMgdOZ3IYxIUbSboihapITW+3jHd9MDSY/2KUewI9FAMekxUOdpQ+zjggSNCkaLxqGunwRRF/L/XFbkvO+Io+MgWhLIxMuBCPvJR5W2VknsO8GcQsJiOTvnCGe2iedAhGQwPQo5N3DWzXkfWiXU+zbxUUdo/I9G67d0g1xNN8i1BPACnevpo1xRonMAAAAASUVORK5CYII=" InformativeScreenshot="21d3cb75c3d117258428fea880f52b79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="-3" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_15" />
+                </If.Else>
+              </If>
+              <ui:UiElementExists DisplayName="Element Exists 'DT  _cllpsID_price'" Exists="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_11">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8fc9a91a-3531-4d3c-9aa1-7d233a561c0e" InformativeScreenshot="35433747640dea2f893fd609ea7ba9e2" Selector="&lt;webctrl name='price_min' tag='INPUT' type='text' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[not isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,429" sap2010:WorkflowViewState.IdRef="If_11">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fiyat'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw-3-serisi?price_min=2015&amp;price_max=1500000" CvTextArgument="Fiyat" CvType="Text" DesignTimeRectangle="108, 491, 200, 43" DesignTimeScaleFactor="1" FriendlyName="'Fiyat'" FullSelectorArgument="&lt;webctrl id='_cllpsID_price' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='_cllpsID_price' tag='DT' type='' class='collapseTitle collapseClosed' aaname='         Fiyat' check:innerText='Fiyat' /&gt;" Guid="308d227a-375b-401e-aba5-d981c770b033" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAAvCAYAAACv8iXeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHGSURBVHhe7dlBTiJRGIXR7hW6JFfQG3DA3CUwcQOuwbgJgjgqbalbPqCMf3dKHiTnJmcgVTLiyyvCr8HMyhOM2T9sCmaz2QBfyAQDBZlgoCATDBRkgoGCTDBQkAkGCjLBQEEmGCjIBAMFmWCgIBMMFGSCgYJMMFCQCQYKsvME83g7vP75PbzerYbt3HW4cNkywSSIEzfD7rm5LhiuVLZsMOcM4nk1Rnk7vMxdhwVl5wnm6Pp2fbP/e/3U3Pc07O5m7mnsHnPvw7A7unb4XrCsrEsw0+nQ3j++lii261VzciSQ5jRxwnBGWZ9gcprkO877a/sT5asP/+n9guGcsp/90p/HpJmgDh/LxhNk7hEt7/VBMPSRdTph3rWPZR/XmxiaWPaPaE4Y+sr6BXN8gtw/fN5/EoNg6CvrGEzz+sHp8le+5I+vT3G09x3dM/0vLC/rG0w+9HP/N8V0rDlR2nvaEwoWli0TzP8aP/Cfv6/AZco6BjPz2wpcqKxbMC/346OUX+i5AlnfRzK4EplgoCATDBRkgoGCTDBQkAkGCjLBQEEmGCjIBAMFmWCgIBMMFGSCgYJMMFCQCQYKsikYM/t+gjErbxjeAERfQqvMLwnRAAAAAElFTkSuQmCC" InformativeScreenshot="543c1a2df0132ca7b2822ca198510596.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW 3 Serisi Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,81" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Minimum Fiyat" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,219" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Text="800000" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw-3-serisi" CvElementArea="121, 534, 59, 35" CvTextArea="128, 546, 35, 11" CvTextArgument="min TL" CvType="InputBox" DesignTimeRectangle="121, 533, 58, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'min TL'" Guid="29c0cb34-7172-4127-be92-74a5b6d14766" InformativeScreenshot="7573393d7501cbd705508648c2094dc7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW 3 Serisi Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Maksimum Fiyat" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,219" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Text="1500000" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw-3-serisi" CvElementArea="185, 579, 58, 35" CvTextArea="192, 591, 39, 11" CvTextArgument="max TL" CvType="InputBox" DesignTimeRectangle="185, 579, 58, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'max TL'" Guid="6a9dafbb-773b-4b9a-8877-34d1ad375516" InformativeScreenshot="5437cff3cf7e30a99dd0171baef3fe05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW 3 Serisi Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="max TL" CvType="Text" DesignTimeRectangle="193, 591, 38, 11" ElementType="Text" FriendlyName="'max TL'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <ui:UiElementExists DisplayName="Element Exists 'DT  _cllpsID_a5'" Exists="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_12">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4a610a4-fd71-4784-afd1-92d64bccf9f0" InformativeScreenshot="08fd218ca7d9b11bae353f5d02c27133" Selector="&lt;webctrl name='a5_min' tag='INPUT' type='text' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[not isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,429" sap2010:WorkflowViewState.IdRef="If_12">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yıl'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw-3-serisi?price_min=2015&amp;price_max=1500000" CvTextArgument="Yil" CvType="Text" DesignTimeRectangle="108, 536, 200, 43" DesignTimeScaleFactor="1" FriendlyName="'Yıl'" FullSelectorArgument="&lt;webctrl id='_cllpsID_a5' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='_cllpsID_a5' tag='DT' type='' class='collapseTitle collapseClosed' aaname='         Yıl' check:innerText='Yıl' /&gt;" Guid="a437da7c-ad45-41e0-ac1b-5154f213fb19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAAvCAYAAACv8iXeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFiSURBVHhe7dfdSQNRAIRR28mDqUq0EtFGgjYiWoWQHvJ+RZPJj0QcYUFXzsCBcDeP+7G7F8PM6gnG7AfbB7PZbIAvZIKBQiYYKGSCgUImGChkgoFCJhgoZIKBQiYYKGSCgUImGChkgoFCJhgoZIKBQiYYKGS/HMzLuL1cjsXlzVi9nrsOf0M2QTC56Zfj9unTtdeHcfV+7f7l9HxPMMxDNs0T5unuI5jF9cNYH50/37/HcDeej85OCYZ5yCZ7JdvGsRxXj+vt2S6iw1NnPVbX2/8czgTDPGQTfsMc3/y73ydPHMEwX9mkH/3rx5uPILY+RyAY5iubNJjjKPavZmeuCYa5ySYO5vAtc4giBMN8ZYKBQiYYKGSCgUI2eTDwH2WCgUImGChkgoFCJhgoZIKBQiYYKGSCgUImGChkgoFCJhgoZIKBQiYYKGSCgUImGChkgoFCJhgoZPtgzOz7Ccas3hhvEs1U1r4w60wAAAAASUVORK5CYII=" InformativeScreenshot="ca195f0e6f51ab1eb8a4b8013ec6e3aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW 3 Serisi Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_33" />
+                </If.Else>
+              </If>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Minimum Yıl" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="410,219" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Text="2015" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw" CvElementArea="121, 595, 58, 35" CvTextArea="128, 608, 19, 10" CvTextArgument="min" CvType="InputBox" DesignTimeRectangle="123, 597, 55, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='a5_min' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='a5_min' tag='INPUT' type='text' class='numericInput js-manual-search-input' aaname='' /&gt;" Guid="51ded625-6312-443d-ae3a-20aa972edaf7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADsAAAAkCAYAAAA3pUL9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD+SURBVGhD7dlBCoMwEAXQXjqnyCk8h1m48QRewIWboCsJ6EL89WMK0moLbbFNMh8GIo7gyyzn4pxDKpUmtq5rlGWJoiiiKXroesDyRdM0aNsWXdcFX3TQQ9cDljfR9z2GYcA4jsEXHfTQtYtlwzRNmOc5+KKDnkMsb4SNMYQOegQr2IAjWMFGEMF+BWsNtDaw/vEfIpN9hbW5hs4NMqWglIax1eZ8a9pM1p+r5TvFvh9N/G2sUhmqnbPOPeMeuyDXdxZGby7lxHww2fVvj857k/Vdgj0jghVsBBGsYCOIYAUbQQQr2AjyFMsFEBdCMa0/6NldbCW1skyhEsI6XAGqDgreoYNgZgAAAABJRU5ErkJggg==" InformativeScreenshot="5831f88d80c98e137e123853bb2142c5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <ui:UiElementExists DisplayName="Element Exists 'BUTTON'" Exists="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e916ef2d-a670-4cb8-8010-a84982853716" InformativeScreenshot="8bfb65f1192f302a892e68fdc982785f" Selector="&lt;webctrl aaname='Ara' parentid='searchResultsSearchForm' tag='BUTTON' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[isUipathButtonExist]" sap:VirtualizedContainerService.HintSize="410,429" sap2010:WorkflowViewState.IdRef="If_7">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Arama Butonu Click" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw" CvElementArea="120, 655, 173, 42" CvTextArea="192, 669, 28, 13" CvTextArgument="Ara" CvType="Button" DesignTimeRectangle="122, 657, 170, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Ara'" FullSelectorArgument="&lt;webctrl aaname='Ara' parentid='searchResultsSearchForm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ara' parentid='searchResultsSearchForm' tag='BUTTON' type='' class='btn btn-block search-submit' check:innerText='Ara' /&gt;" Guid="ddcd906b-a227-4c6b-abef-a6e33767d45a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAqCAYAAAAqLWAgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATuSURBVHhe7Zz9U1RlFMf7dxqnZrLJfqjph8wQKctIU1FBEDJMqBl7mWlQAkshFQERk5ewdATGwn4Qx+Udd1lAkJd1WaltNqCNFRddXlpiXzo957l7l73u3kfG0ebRzjPzme+ee85zlxk+3L2XH/apYDAIBPG4QeISjyVhcS/3/wEJ+c2wOucKQUgHuomORomLjdTyAfj4BxtBSEXWGRt3Ex2NEhet/uh7GySXD0MKg5JSpsxmbqKjGnEDgQA/iM3kk0N8mJJSpsw+M8IdRVfD4vr9fn4wq8YKO8oGCUI60E10FF2NKe720CAlpUwpFHfvdzdg24kBgpAOdFMsbul1Zbg0tIlqqiWo91YLxP2wahi2lvRDEoOSUqbcw9zUFRebOEgQsiEUN7NyCLYU9xGEdKCbQnE3H1cGKSllyg8qBOLuPj0I7xX1RnCNaqqlqHefHhCJOxCxiSDkQSju+6y58VgPbGJQ6ueFbif4A/8ArhbL1LL3UT54ZojExebGo8owpX4Oj81waXHZnXch7oBhWfsoHzwzvhWIm37qOrx7xMzoptTJ3HorTM8twu2ZBZhf8IHPH4SqK1bNnCq2y/M3n8XVMnwLShrt4F0M8Fpd2M+tH9Hsp4zO9FP9InH7IZEPmil1spkJiOtilx16bk7y190jf8K6/Nbw3PCYhx9HqSsv34Dn95yDp3dWQMGPFugcmYJnM2p4bbY6+RyeZ0OhSfi+//cUirurvA/e+aaLEDDh9vKrbUrhJTjbZgdfIMivvAdr+8Mzqrh4G7EirRri81rCvfWHOuDVLxr5a/WPAOde+fTn8AwRDbopFrcwNEwZlcWXfuUf9b2jt2Bl5jl4u8AIY1PzXL6fjL9wKXEuUtwXs+s151FljVyx5ii1ueukQNy0smv8l7GhwMTSFEqq1Xrod0XIWMt1Zx72VffyeXUOhVyVXRfe3zTk4sfVK/aFzpu81s49vJ/3SapTmZu64mITB5dQNlJthJxaC7jZg5TDNcvvT1U+q2gLP6RVNFrYVbeTiXtXI6R6jnH3X/w43tuuzDwLhkFF5KW5h/fzPml1almvvrg7T/TAW4evEjGoM43z/902mOywKqtO0xt03OECmkecEJdr0IobMRt5/OVPGmD8tiLyvXNENOimUNz1h5RBSm2iZN5FP3xe2QGr2cNVZB+lVh/S8s/3xRQX53LOW2DKs8B7967eUVfM96VUMqVUIG5ySTe8+XUnocMLWbXwTHoNxOe1RvXW7DfAirSqcP+lfQ38VgL3RM4lHGyH59htQuTthgruiZwllkA37yNuR2iYklKeTC4x64u7o9gMCV+1wxsMJTuoplqKentxl7642MSPMhympJQpheJuO94F6/LbCEI60E2huPH5rXwwPrSBaqplqIXiJhWZYG1eC6OVklKqTCoyisQ1wtovcZBBSSlRJh0TiLv16FV4PbcZ4hiUlDLlFuamrrjYxEGCkA2huJuPdMKaAwZGU4xUoT71//s+uikU97X9OGgIZRPVVEtRJxa0xxY3Ia+Jf1X5psJ2gpCKxMNt3E10NErci12/8QZaTRCygW6ioxpx8evJvV4vTE5OwujoKFit1mVhs9nA4XDAxMQEQTwynE4nuN1u7qjmq/QRn88HLpcLpqenwePxcGbuA54MTzo7O0sQj4y5uTkuLTqq+BqEfwG6+rc4UAg+xwAAAABJRU5ErkJggg==" InformativeScreenshot="51dacef11031be71eb358830ab7c5725.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_23" />
+                </If.Else>
+              </If>
+            </Sequence>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Model' ReferenceIdx='1' Name='Model'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Başlığı' ReferenceIdx='2' Name='İlan Başlığı'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Yıl' ReferenceIdx='3' Name='Yıl'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KM' ReferenceIdx='4' Name='KM'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Renk' ReferenceIdx='5' Name='Renk'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Fiyat' ReferenceIdx='6' Name='Fiyat'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Tarihi' ReferenceIdx='7' Name='İlan Tarihi'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İl / İlçe' ReferenceIdx='8' Name='İl / İlçe'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9' ReferenceIdx='9' Name='Column-9'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Model' attr='fulltext' /&gt;&lt;column name='İlan Başlığı' attr='fulltext' /&gt;&lt;column name='Yıl' attr='fulltext' /&gt;&lt;column name='KM' attr='fulltext' /&gt;&lt;column name='Renk' attr='fulltext' /&gt;&lt;column name='Fiyat' attr='fulltext' /&gt;&lt;column name='İlan Tarihi' attr='fulltext' /&gt;&lt;column name='İl / İlçe' attr='fulltext' /&gt;&lt;column name='Column-9' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="642,158" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="d79906b5-3a94-4f5f-8dd2-038cc58d9d04" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/bmw-3-serisi?a5_min=2015&amp;price_min=800000&amp;price_max=1500000" CvElementArea="1032, 256, 86, 33" CvTextArea="1051, 265, 48, 13" CvTextArgument="Sonraki" CvType="Button" DesignTimeRectangle="1034, 258, 84, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Sonraki'" FullSelectorArgument="&lt;webctrl class='prevNextBut' parentid='searchResultsSearchForm' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prevNextBut' parentid='searchResultsSearchForm' tag='A' type='' aaname='Sonraki ' check:innerText='Sonraki' /&gt;" Guid="2e827c28-6ad0-48b9-af53-18c8e69f26a7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAiCAYAAADbLB6TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG7SURBVGhD7Zo7jsIwEIZzJ27CPbhFLkDJAaBHXAHRUtJFSoUQZZp0s36MH+OYzcJ6kAzzSRYYO4/5/MeiSAMCKyKYGS94GAbo+x66rpP2j6YdapcOL1gPjOOIPeFVtEPt0uEFa/tCGWKXIpgBEcyMCGZGBDMjgpkRwcx8l+DzAZrFAU7YfQf8gk1RG2zvLW7CjODrfgfN6ghX7JeAV/DtCMvFDra3qF+4gKf4uATPFnSB1qdbNSL/DtvVBpb7O5zWYU57xmE/fjGf8XVMEnPnTO7HzgsBqC/BkcAgxmEFNesL9sGK9AXieHQsFRDGiRT1lLRqUSz2+v7aseDM4lco2BISmGwXk3RrIW5OSLBHS0kF/yrEzpkITrcupFrBFpc4LCyTIJq4vwkm4wZ3ndCoYPw9enIclQvWRIkqlOBUcG6bmW4RdiHTY+sTrAoiRZBHE5M2swc/Jzj5DRM7Faww90KPrzLB8T8AsgcbULIbJ8W9IliB4sz51OIZaeq7kRwL1ri5uMgfsEV8HyKYGRHMjAhmRgQzI4KZEcHMiGBmRDAzWcHy6lQZHr46JS//lWnaYfblP4EHEcwKwA+xijeij7JNOwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW 3 Serisi Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="324, 453, 934, 2162" DesignTimeScaleFactor="1" FriendlyName="'Model İlan Başlığı Yıl'" FullSelectorArgument="&lt;webctrl id='searchResultsTable' tag='TABLE' /&gt;" Guid="47a43dfc-cd96-4e06-8f82-47b4855233a9" InformativeScreenshot="dffcd9e8b410eeb0109c85d884cccaa7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BMW 3 Serisi Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+            <Sequence DisplayName="Piyasa Fiyatı Hesaplama" sap:VirtualizedContainerService.HintSize="642,966" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[TotalMarketValue]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[TotalAdvertisementCount]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[ExtractDataTable.RowCount]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,482" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,294" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Name="itemValue" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[itemValue]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(CurrentRow.Item("Fiyat").ToString.Trim.Replace(" ","").Replace("TL","").Replace(".",""))]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[TotalMarketValue]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[TotalMarketValue+itemValue]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <Assign sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Double">[avgMarketPrice]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Double">[(TotalMarketValue/TotalAdvertisementCount)]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <Sequence DisplayName="Excel Kayıt İşlemleri" sap:VirtualizedContainerService.HintSize="642,913" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="580,798" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                <ueab:ExcelProcessScopeX.Body>
+                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,711" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="484,600" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\Asus\OneDrive\Masaüstü\İlan Sonuç.xlsx">
+                        <ueab:ExcelApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,327" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ExcelWriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="AdvertisementList">
+                                <ui:ExcelWriteRange.StartingCell>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" Value="" />
+                                  </InArgument>
+                                </ui:ExcelWriteRange.StartingCell>
+                              </ui:ExcelWriteRange>
+                              <ui:ExcelWriteCell Cell="A1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="AvgMarketValue" Text="[avgMarketPrice.ToString]" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelApplicationCard.Body>
+                      </ueab:ExcelApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelProcessScopeX.Body>
+              </ueab:ExcelProcessScopeX>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="48150e0785afd087e2f2d17386f51b2a.jpg" Selector="&lt;html app='chrome.exe' title='sahibinden.com - Türkiye&amp;apos;nin Online İlan ve Alışveriş Sitesi' /&gt;" Title="sahibinden.com - Türkiye'nin Online İlan ve Alışveriş Sitesi" Url="https://www.sahibinden.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
